@@ -1,0 +1,47 @@
+name: Product feedback
+description: Suggest one focused improvement to the public LeXplume product experience.
+title: "[Feedback] "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the learning problem before proposing a feature. Do not post account details, private reading material, credentials, exported data or security vulnerabilities.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What learning problem did you encounter?
+      description: Explain what you were trying to do and where the current flow became difficult.
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Learning-loop stage
+      options:
+        - Encounter
+        - Capture
+        - Understand
+        - Review
+        - Retain or reuse
+        - Local data, backup or sync
+        - Accessibility or language
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What outcome would help?
+      description: Describe the result, not implementation details.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, account identity, private learning content and exported data.
+          required: true
+        - label: This is not a security or privacy vulnerability.
+          required: true

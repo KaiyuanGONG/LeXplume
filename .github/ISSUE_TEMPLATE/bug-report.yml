@@ -1,0 +1,62 @@
+name: Bug report
+description: Report a reproducible LeXplume product problem without private data.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not post passwords, keys, account identifiers, private vocabulary, exported data or security vulnerabilities. Security reports belong at support@lexplume.com.
+  - type: input
+    id: version
+    attributes:
+      label: LeXplume version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - Web browser
+        - Installed PWA
+        - Official Android build
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser or Android version and device
+      placeholder: "Chrome 140 on Android 16"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use fictitious or redacted content.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, account identity, private learning content and exported data.
+          required: true
+        - label: This is not a security or privacy vulnerability.
+          required: true

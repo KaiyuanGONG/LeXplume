@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: LeXplume support
+    url: mailto:support@lexplume.com
+    about: Use email for account-specific or private support.
+  - name: Privacy and account deletion
+    url: https://lexplume.com/delete-account
+    about: Read the current self-service deletion instructions.
