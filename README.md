@@ -1,74 +1,105 @@
 <p align="center">
-  <img src="assets/logo-512.png" alt="LeXplume Semantic Fold logo" width="96">
+  <img src="assets/logo-512.png" alt="LeXplume Semantic Fold 标志" width="96">
 </p>
 
 # LeXplume
 
-**Turn the words you meet in real reading into vocabulary you can actually recall.**
+## 把你真正遇到的词，变成真正记得住的词汇。
 
-[简体中文](README.zh-CN.md) · [Français](README.fr.md)
+从论文、报告、幻灯片和日常法语中随手拾词；AI 按你的专业语境解释，并根据已有词库推荐下一批值得学的词，最后由 FSRS 安排复习。
 
-![LeXplume — words in context, review on rhythm](assets/github-hero-1600x600.png)
+> Capture the words you actually meet. Understand them in your domain. Remember them at the right time.
 
-[Website](https://lexplume.com) · [Product logic](PRODUCT.md) · [Support](mailto:support@lexplume.com) · [Privacy](https://lexplume.com/privacy)
+[English](README.en.md) · [Français](README.fr.md)
 
-LeXplume is a Chinese-first English and French vocabulary app for independent adults. It connects the words you encounter in real material with their original sentence, a concise explanation, and an FSRS review schedule—without making a cloud account or AI subscription the centre of the experience.
+[在线预览](https://lexplume.com) · [产品逻辑](PRODUCT.md) · [常见问题](FAQ.md) · [支持](mailto:support@lexplume.com) · [隐私政策](https://lexplume.com/privacy)
 
-## Why LeXplume
+> `lexplume.com` 当前展示 LeXplume 1.0.0。产品正在准备面向 18 岁及以上独立成年人的免费邀请制发布；公开注册、付费服务和公开 Google Play 版本尚未开放。
 
-- **Generic word lists start outside your life.** LeXplume begins with material you already chose to read.
-- **Contextless lookup is easy to forget.** Every captured word can keep the sentence that made it meaningful.
-- **Manual card creation interrupts reading.** Capture, explanation and review stay in one focused flow.
-- **Cloud-only learning reduces control.** Core vocabulary and review state remain local-first, with offline-capable use and JSON backup.
+![LeXplume 从技术材料中选择 aligned 和 embeddings，并保留各自原句](assets/readme/01-capture-real-material.webp)
 
-## The learning loop
+_截图来自线上 LeXplume 1.0.0，使用虚构演示数据。_
 
-**Encounter → Capture → Understand → Review → Retain**
+## 从材料里拾词，不从通用词表里领任务
 
-1. **Encounter** a useful English or French word in something you are reading.
-2. **Capture** the word or phrase together with its sentence.
-3. **Understand** it with dictionary context and optional AI assistance.
-4. **Review** it when FSRS estimates that memory needs reinforcement.
-5. **Retain and reuse** it through recall, spelling, dictation and sentence exercises.
+LeXplume 的起点不是“今天发给你 20 个热门词”，而是你正在读的内容。你可以输入单词，也可以粘贴句子或段落，从中点选多个目标词；图片内容则可通过 OCR 提取。每个词都能保留原句、来源、标签和收录时间，让词汇始终连着它最初出现的语境。
 
-## What it includes
+这条路径尤其适合论文、技术报告、课程幻灯片，也适合在法语生活环境里随手记下真正遇到的表达。
 
-- Text and image-text capture that preserves sentence context.
-- A local-first vocabulary library with JSON export and restore.
-- FSRS review using flashcards, spelling, dictation and sentence completion.
-- English study by default and opt-in French study.
-- Independent interface, explanation and studied-content languages.
-- Optional browser-direct AI with a locally stored key; eligible invited accounts may use a bounded managed service.
-- Optional account sync as a cloud mirror, not the runtime source of truth.
+## 不是更多释义，而是与你有关的释义
 
-## Product preview
+同一个词在不同领域里可能指向完全不同的概念。你可以填写自己的专业领域或身份，LeXplume 会在基础词典信息之外，生成面向该语境的讲解。
 
-These are unedited captures from the real LeXplume interface using fictitious learning content.
+以 `alignment` 为例：
 
-| Capture in context | Review with FSRS | Keep local control |
-| --- | --- | --- |
-| <img src="assets/screenshot-capture.jpeg" alt="Select a word in its original sentence" width="280"> | <img src="assets/screenshot-review.jpeg" alt="Review a word with four recall ratings" width="280"> | <img src="assets/screenshot-local-first.jpeg" alt="Local mode and JSON backup controls" width="280"> |
+- 日常与通用词典里，它可以是“对齐、一致”。
+- 在生物信息学里，它通常指 DNA、RNA 或蛋白质的**序列比对**。
+- 在机器学习里，`model alignment` 更接近让模型行为与人类意图、规范或目标保持一致。
 
-## Design point of view
+快速扫读用的短释义、基础定义和长篇领域讲解彼此独立；领域讲解生成后会缓存，之后打开无需重复请求。
 
-LeXplume uses a quiet **Paper** visual language: warm neutral surfaces, editorial typography, restrained hierarchy and enough space to keep attention on the word and its sentence. The **Semantic Fold** mark uses one continuous form and one negative-space focus to represent language being captured, understood and retained. It remains recognizable in one colour and at small sizes.
+![LeXplume 中 alignment 的基础释义、序列比对语境和模型对齐语境](assets/readme/02-domain-explanation.webp)
 
-Read the full [product and design rationale](PRODUCT.md).
+## 词库越长，推荐越像你
 
-## Current availability
+推荐不是另一份固定词表。LeXplume 会综合当前学习语言、你填写的领域、手动选择的难度，以及已有词库中的近期收录词、标签和 FSRS 薄弱词，一次混合给出：
 
-LeXplume 1.0 is being prepared as a free, invite-only Beta for independent adults aged 18+. Public registration, payment and a public Google Play release are not available at this time. Mainland China is not an actively supported launch market.
+- 与已学主题相邻的新概念；
+- 已知词常见的搭配、派生词和词族；
+- 针对薄弱区域的补强词汇。
 
-The Web/PWA at [lexplume.com](https://lexplume.com) is the canonical product. An Android Trusted Web Activity is in pre-release testing and will be distributed only after association, privacy and device checks pass.
+推荐会排除当前语言词库里已经收录的词。结果只临时显示；只有你主动添加后，它才会经过正常拾词流程进入词库。新用户没有足够积累时，则先按领域与难度推荐。
 
-## Data posture
+## 英语与法语，各有自己的学习节奏
 
-LeXplume is local-first: the active vocabulary and review state live in browser storage. Optional account sync is a cloud mirror rather than the runtime source of truth. Browser-direct AI keys stay on the device and are excluded from JSON export and sync.
+英语和法语共用一套本地数据模型与备份格式，但拥有独立的词库视图、推荐结果和复习队列。切到法语后，界面进入蓝色氛围，法语词显示 `FR` 角标；英语保持暖琥珀色且不加语言角标。
 
-Optional AI features send only the content needed for the requested operation to the provider you select or to LeXplume's managed proxy. Read the current [privacy policy](https://lexplume.com/privacy) before enabling them.
+一个复习会话只处理一种语言，避免英法混卡。关闭“学习法语”时，法语内容只是被隐藏，不会被删除。
 
-## Feedback and repository scope
+![LeXplume 英语暖琥珀词库与带 FR 角标的法语蓝色词库并排对比](assets/readme/03-english-french.webp)
 
-Use the product-feedback issue form for non-private suggestions. Account-specific support belongs at [support@lexplume.com](mailto:support@lexplume.com), and security concerns must follow [SECURITY.md](SECURITY.md).
+_实际界面对照拼接：左侧为英语词库，右侧为法语词库；两侧均使用虚构数据。_
 
-This is a public product-information repository. It contains release notes, support guidance, public product direction and approved brand/media assets. It does not contain the application source code; the source remains private. Publication does not grant a license to the LeXplume application, name, visual identity or private code.
+## 为长期记忆，而不是一次收藏
+
+收进词库只是开始。LeXplume 使用 FSRS 根据每次反馈安排下一次复习，并提供闪卡、拼写、听写和句子输入四种练习模式。概览页会汇总待复习数量、记忆保持率、连续学习、活动热力图和词汇状态，帮助你看到积累是否真的变成了记忆。
+
+| 能力 | LeXplume 如何处理 |
+| --- | --- |
+| 拾词 | 单词、句子、段落、图片/OCR；支持一次选择多个目标词 |
+| 理解 | 发音、词典定义、中文短释义、可缓存的专业领域讲解与单词追问 |
+| 推荐 | 按学习语言、领域、难度、近期词汇和薄弱词推荐未收录新词 |
+| 复习 | FSRS 排程；闪卡、拼写、听写、句子输入四种模式 |
+| 英语 / 法语 | 独立词库视图、推荐与复习流；法语蓝色氛围和 `FR` 角标 |
+| 数据 | 浏览器本地存储、离线可用、JSON 导入导出 |
+| 云端 | 可选账号同步与有上限的托管 AI；本地数据仍是运行时事实来源 |
+
+## 本地优先，以及 AI 密钥的边界
+
+- **默认保存在本机。** 词库与复习状态保存在当前浏览器；核心拾词和复习可离线使用。
+- **备份不绑定平台。** 数据可以导出为 JSON，也可以从 JSON 恢复。
+- **浏览器直连 BYOK。** 你选择 AI 提供商与模型，并提供自己的 API Key；密钥留在设备上，不写入 JSON 导出，也不同步到云端。
+- **云同步是可选项。** 账号同步只是跨设备镜像，不替代本地运行时数据。
+- **托管 AI 有明确边界。** 只有符合资格的邀请账号可以使用有上限的托管服务；它不是使用 LeXplume 的前提。
+
+启用可选 AI 功能前，请阅读最新[隐私政策](https://lexplume.com/privacy)。AI 只应收到完成当前操作所需的内容。
+
+## 当前可用范围
+
+- Web/PWA [lexplume.com](https://lexplume.com) 是规范产品入口，当前界面品牌与版本为 LeXplume 1.0.0。
+- 免费邀请制所需的账户与受控托管能力正在按发布清单验收；代码或文档存在不等于已经公开启用。
+- 法语 AI 补全仍有一个已知缺口：当前可生成词性、法语定义和中文短释义，但 IPA 的请求与持久化尚未完成。
+- 公开注册、付费和公开 Google Play 发布尚未开放。后续方向见 [ROADMAP.md](ROADMAP.md) 与 [RELEASE_NOTES.md](RELEASE_NOTES.md)。
+- 中国大陆不在当前主动推广或支持的首发市场范围内。
+
+## 设计视角
+
+LeXplume 使用安静的 **Paper** 视觉语言：温暖的中性色、编辑感字体、克制的信息层级和充足留白，让注意力停留在词与原句。**Semantic Fold** 标志由一个连续主体和一个负空间焦点构成，表达语言被拾取、理解和留存；它在纯单色和小尺寸下仍然成立。
+
+完整说明见[产品与设计逻辑](PRODUCT.md)。
+
+## 反馈与仓库范围
+
+非隐私产品建议可以使用 Issue 表单；账号问题请发往 [support@lexplume.com](mailto:support@lexplume.com)，安全问题必须按 [SECURITY.md](SECURITY.md) 私下报告。
+
+这是公开的产品信息仓库，包含发布说明、支持资料、公开产品方向与获批品牌/媒体素材。它不包含应用源代码，源代码保持私有；公开这些文件不授予 LeXplume 应用、名称、视觉资产或私有代码的使用许可。
