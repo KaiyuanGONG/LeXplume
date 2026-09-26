@@ -6,8 +6,8 @@
 - Keep a local-first word library with JSON export/import.
 - Review due words with FSRS flashcards, spelling, dictation and sentence exercises.
 - Add dictionary results and optional domain-aware AI explanation, enrichment and chat.
-- Choose browser-direct BYOK or, for eligible invited accounts, a bounded managed proxy.
+- Use your own AI key in the browser or, on invited accounts, Cloud AI with a daily limit.
 - Optionally mirror supported records between devices through an account.
 - Access privacy, terms, support and self-service account-deletion guidance from the app.
 
-The 1.0.0 public release remains pending. A release note in this repository is not evidence that Google Play, public signup or a managed service is live.
+The 1.0.0 public release is still pending. Google Play, public signup and Cloud AI are not publicly available yet.

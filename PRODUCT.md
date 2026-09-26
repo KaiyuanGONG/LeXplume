@@ -1,6 +1,6 @@
 # Product and design logic
 
-LeXplume helps independent adult learners turn vocabulary encountered in real English or French material into durable, reviewable knowledge. The product is Chinese-first, local-first and offline-capable; AI and cloud services are optional layers rather than prerequisites.
+LeXplume helps adults who learn on their own turn words they meet in English or French material into vocabulary they can review and remember. The product is Chinese-first, local-first and works offline; AI and cloud features are optional.
 
 ## The problem
 
@@ -14,11 +14,11 @@ Contextless lookup answers “what can this word mean?” but often discards “
 
 ### Manual card creation breaks the reading flow
 
-Manual card creation asks the learner to copy a word, sentence, definition and metadata across tools. That friction encourages collecting less or producing weak cards. LeXplume keeps capture, understanding and scheduling in one narrow flow.
+Manual card creation asks the learner to copy a word, sentence, definition and metadata across tools. That friction leads people to collect fewer words or make thinner cards. LeXplume handles capture, explanation and scheduling in one place.
 
 ### Cloud-only learning weakens control
 
-Cloud-only products can make a login, connection or provider relationship the condition for reaching one's own vocabulary. LeXplume keeps the active library and review state in local browser storage, supports JSON backup, and treats sync as an optional mirror.
+With cloud-only products, you may need a login, a connection or an active account with a provider just to reach your own vocabulary. LeXplume keeps the active library and review state in local browser storage, supports JSON backup, and treats sync as an optional mirror.
 
 ## The learning loop
 
@@ -34,7 +34,7 @@ The learner selects the word and preserves its sentence. The unit of learning is
 
 ### 3. Understand
 
-Dictionary context is available without making AI mandatory. Optional AI can tailor an explanation to the sentence, domain and selected explanation language. A browser-direct key stays local; an eligible invited account may instead use a bounded managed service.
+Dictionary results work without AI. Optional AI can add an explanation based on the sentence, your field and your chosen explanation language. You can use your own key, which stays on your device, or, with an invited account, Cloud AI with a daily limit.
 
 ### 4. Review
 
@@ -42,16 +42,16 @@ FSRS estimates when another retrieval attempt is useful. Flashcard, spelling, di
 
 ### 5. Retain and reuse
 
-The aim is not a streak or a growing list. It is a smaller loop between noticing, understanding, retrieving and recognizing the word again in real material.
+The goal is to recognize the word the next time you meet it in real material, not to grow a streak or a long list.
 
 ## Product boundaries
 
 - **Local-first:** Indexed browser storage is the active runtime copy.
 - **Offline-capable:** capture, library, backup and review remain useful after the app has loaded; network features still need connectivity.
 - **Optional cloud mirror:** supported records can sync for eligible accounts, but sync is not required.
-- **Optional AI:** basic vocabulary and review do not require an AI key or managed allowance.
+- **Optional AI:** basic vocabulary and review need neither your own AI key nor Cloud AI.
 - **Independent language axes:** interface language, explanation language and studied-content language are separate settings.
-- **User-controlled backup:** JSON export and restore make local ownership operational, not merely rhetorical.
+- **User-controlled backup:** JSON export and restore let you move or recover your data yourself.
 
 ## Design rationale
 
@@ -72,9 +72,9 @@ The mark follows four constraints:
 
 Paper ink is the primary treatment. A light reversed mark exists only as an adaptation for a genuinely dark field, not as a competing logo.
 
-### Why the experience stays quiet
+### Why the interface stays quiet
 
-LeXplume is designed as a reading companion and memory instrument, not a game layer over vocabulary. Motion, colour and status indicators support action or comprehension; they are not used to manufacture urgency.
+LeXplume is a reading and review tool, not a vocabulary game. Motion, colour and status indicators are there to help you act or understand, not to create pressure.
 
 ## What LeXplume does not claim
 

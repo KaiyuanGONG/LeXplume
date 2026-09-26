@@ -6,7 +6,7 @@ Not yet. LeXplume 1.0 is being prepared as a free, invite-only Beta for adults a
 
 ## Does it work offline?
 
-Core capture, library, backup and review behavior is designed to remain useful offline after the Web app has been loaded. Network-dependent dictionary, AI, account and sync features need connectivity. Exact offline behavior can vary by browser and installed-app state.
+After the Web app has loaded once, capture, your library, backup and review keep working offline. Network-dependent dictionary, AI, account and sync features need connectivity. Exact offline behavior can vary by browser and installed-app state.
 
 ## Where is my vocabulary stored?
 
@@ -14,11 +14,11 @@ LeXplume is local-first. The active copy is stored by your browser on the curren
 
 ## Is cloud sync required?
 
-No. Eligible invited accounts can use an optional cloud mirror, but the local database remains the runtime source of truth.
+No. Invited accounts can keep a copy in the cloud for sync, but the app always works from the copy on your device.
 
 ## Do I need an AI key?
 
-No for the basic vocabulary and review workflow. For browser-direct AI, you provide a compatible key that is stored locally and excluded from export and sync. Eligible invited accounts may instead have a bounded managed-AI allowance.
+No for the basic vocabulary and review workflow. For browser-direct AI, you provide a compatible key that is stored locally and excluded from export and sync. Invited accounts can use Cloud AI instead, which has a daily limit.
 
 ## Which languages can I study?
 
@@ -30,7 +30,7 @@ An Android Trusted Web Activity is being tested, but it is not a public Play rel
 
 ## Is LeXplume intended for children or schools?
 
-No. The current product and Beta are for independent adults aged 18+ and are not designed or marketed for children, schools or classroom administration.
+No. The current product and Beta are for adults aged 18+ learning on their own, and are not designed or marketed for children, schools or classroom administration.
 
 ## How do I delete my account?
 
