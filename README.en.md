@@ -1,103 +1,86 @@
 <p align="center">
-  <img src="assets/logo-512.png" alt="LeXplume Semantic Fold logo" width="96">
+  <img src="assets/logo-512.png" alt="LeXplume Semantic Fold logo" width="88">
 </p>
 
-# LeXplume
+<h1 align="center">LeXplume</h1>
 
-## Turn the words you come across into words you remember.
+<p align="center"><strong>Turn the words you come across into words you remember.</strong></p>
 
-Capture words from papers, reports, slides, and the French you meet in daily life. Get explanations for your field, suggestions drawn from your own library, and reviews scheduled by FSRS.
+<p align="center">
+  Found an unfamiliar word in a paper or article? Save it with its sentence.<br>
+  LeXplume explains it for your field and lets FSRS schedule the reviews. For English and French.
+</p>
 
-[简体中文](README.md) · [Français](README.fr.md)
+<p align="center">
+  <a href="https://lexplume.com"><strong>Open the web app</strong></a> ·
+  <a href="https://lexplume.com/#early-access">Request Early Access</a> ·
+  <a href="FAQ.md">FAQ</a> ·
+  <a href="README.md">简体中文</a> ·
+  <a href="README.fr.md">Français</a>
+</p>
 
-[Live preview](https://lexplume.com) · [Product logic](PRODUCT.md) · [FAQ](FAQ.md) · [Support](mailto:support@lexplume.com) · [Privacy](https://lexplume.com/privacy)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/readme/en/hero-dark.webp">
+  <img src="assets/readme/en/hero-light.webp" alt="Capture on a computer: a sentence from a paper with alignment selected. Review on a phone: the flipped card shows the meaning and the original sentence.">
+</picture>
 
-> `lexplume.com` currently shows LeXplume 1.0.0. A free, invite-only Early Access for adults (18+) learning on their own is being prepared; public registration, payment, and a Google Play release are not available yet.
+<p align="center"><sub>Real interface screenshots · demo data</sub></p>
 
-![LeXplume selecting aligned and embeddings from technical material while preserving each source sentence](assets/readme/01-capture-real-material.webp)
+## Three steps from new word to known word
 
-_Captured from the live LeXplume 1.0.0 interface with fictitious demo data._
+<img src="assets/readme/en/steps.webp" alt="The real Capture, Understand and Review screens: saving alignment, a bioinformatics explanation, and a review card with rating buttons">
 
-## Capture from your material, not somebody else's list
+1. **Capture: save it with its sentence.** Paste text, add a screenshot or take a photo, then tap the word you want. The sentence and source are saved with it, and IPA, part of speech and a definition fill in automatically.
+2. **Understand: learn what it means here.** Beyond the dictionary definition, AI uses your field and the original sentence to explain what the word means in your material. Ask a follow-up if it’s still unclear.
+3. **Review: see it again before you forget.** FSRS schedules each review: the better you remember a word, the longer the gap. Besides flashcards there are spelling, dictation and fill-in exercises.
 
-LeXplume starts with what you are already reading. Enter a word, paste a sentence or paragraph and select several targets, or extract text from an image with OCR. Each saved word keeps its sentence, source, tags, and capture time, so when you review it later you can still see where it came from.
+## Same word, different field, different meaning
 
-It works well for papers, technical reports, lecture slides, and the French you run into in daily life.
+Set your field in Settings and domain explanations follow it. The same `alignment` is **sequence alignment** in bioinformatics and **model alignment** in machine learning. An explanation is saved once it is generated, so you can read it again offline.
 
-## Explanations for your field
+<img src="assets/readme/en/domain.webp" alt="Two domain explanations of alignment: sequence alignment for bioinformatics, model alignment for machine learning">
 
-The same word can mean very different things in different fields. Enter your field in Settings (for example, “bioinformatics”) and LeXplume adds an explanation for that field next to the dictionary definition.
+## Keep learning around your own library
 
-Take `alignment`:
+- **Next words, picked from your library.** Based on your field, the words you’ve saved and the ones you keep forgetting, LeXplume suggests 5 words you don’t have yet, at a basic, intermediate or advanced level. Nothing is added until you tap Add.
+- **English and French, kept apart.** Turn on French in Settings and each language gets its own library and review queue; recommendations follow the language you’re studying. A review session covers one language, and turning French off only hides French words — it never deletes them.
 
-- In general usage, it can mean arrangement or agreement.
-- In bioinformatics, it usually means **sequence alignment** across DNA, RNA, or proteins.
-- In machine learning, `model alignment` concerns keeping model behaviour consistent with human intentions, norms, or goals.
+<img src="assets/readme/en/grow.webp" alt="Three phone screens: words picked from your library, the English library, and the French library with FR markers">
 
-The short meaning, dictionary definition, and domain explanation are shown separately. A domain explanation is saved once generated, so opening the word again does not need another request.
+## Works anywhere. Your data stays yours.
 
-![LeXplume comparing the general definition of alignment with its bioinformatics and machine-learning meanings](assets/readme/02-domain-explanation.webp)
-
-## Suggestions that grow with your library
-
-LeXplume looks at your study language, your field, the difficulty you choose, your recent captures, your tags, and the words FSRS marks as weak, then suggests a mix of:
-
-- adjacent concepts that extend topics you already study;
-- useful collocations, derivatives, and word families;
-- reinforcement for areas where recall is still weak.
-
-Words already in your library are never suggested. Suggestions stay temporary until you tap Add. With a new or empty library, suggestions are based on your field and difficulty only.
-
-## English and French, each with its own learning rhythm
-
-English and French share one local data model and backup format, while keeping separate library views, recommendations, and review queues. French study uses a cool-blue ambience and visible `FR` markers; English keeps the warm-amber ambience and remains unmarked.
-
-One review session covers one language, avoiding mixed English/French cards. Disabling French study hides French entries without deleting them.
-
-![Side-by-side comparison of LeXplume's warm-amber English library and blue French library with FR markers](assets/readme/03-english-french.webp)
-
-_Side-by-side composition of two real interface states, both using fictitious data._
-
-## Review with FSRS
-
-LeXplume uses FSRS to schedule each word's next review from your rating, with four practice modes: flashcard, spelling, dictation, and sentence fill-in. The dashboard shows due words, retention, streaks, activity, and how many words are in each state.
-
-| Capability | How LeXplume handles it |
+| | |
 | --- | --- |
-| Capture | Words, sentences, paragraphs, and image/OCR input; select several targets at once |
-| Understand | Pronunciation, dictionary definition, concise Chinese meaning, cached domain explanation, and per-word follow-up |
-| Recommend | Uncaptured words selected from language, domain, difficulty, recent vocabulary, and weak areas |
-| Review | FSRS scheduling with flashcard, spelling, dictation, and sentence fill-in modes |
-| English / French | Separate library, recommendation, and review flows; blue French ambience with `FR` markers |
-| Data | Browser-local storage, offline-capable core, and JSON export/import |
-| Cloud | Optional account sync and Cloud AI (daily limit); the app always works from the copy on your device |
+| **Capture on a computer, review on your phone** | The web app works on computers and phones and can be installed to your home screen. Early Access accounts sync across devices. |
+| **Review offline** | Once installed, capture, your library and review work offline. AI, sync and the online dictionary need a connection. |
+| **Stored on your device by default** | LeXplume is local-first: your library lives on your device, and you can export a JSON backup at any time. |
+| **Bring your own API key** | Your own AI key stays on this device and is never synced or exported. In browser-direct mode it is sent only to the AI provider you choose. |
+| **AI is optional** | Capture, your library and review all work without AI. |
 
-## Local data and API keys
+Read the [privacy policy](https://lexplume.com/privacy) before you turn on AI features. AI receives only what the current action needs.
 
-- **Local by default.** Active vocabulary and review state live in the browser; core capture and review work offline.
-- **Portable backup.** Data can be exported to and restored from JSON.
-- **Browser-direct BYOK.** Choose an AI provider and model and supply your own key. The key stays on the device and is excluded from JSON export and sync.
-- **Sync is optional.** It keeps a copy in the cloud for your other devices; the app still works from the copy on this device.
-- **Cloud AI is optional too.** It is available only to invited accounts, with a daily limit, and you never need it to use LeXplume.
+## Early Access
 
-Read the current [privacy policy](https://lexplume.com/privacy) before enabling optional AI features. Only the content needed for the current request is sent to the AI provider.
+Use it now — it’s free during Early Access. The local features work without an account; Early Access accounts add cloud sync and Cloud AI, which has a daily usage limit.
 
-## Current availability
+- Accounts are currently invite-only and open to adults (18+) learning on their own.
+- Request access by leaving your email at [lexplume.com](https://lexplume.com/#early-access). A request does not create an account.
+- There are no paid plans yet. Pricing after Early Access has not been decided, so we don’t promise free forever.
 
-- The official app is the Web/PWA at [lexplume.com](https://lexplume.com), currently version 1.0.0.
-- Accounts and Cloud AI are still in pre-launch testing and open to invited accounts only.
-- Known gap: AI enrichment for French words fills in part of speech, a French definition, and a short Chinese meaning, but not yet the IPA transcription.
-- Public registration, payment, and public Google Play distribution are not available. See [ROADMAP.md](ROADMAP.md) and [RELEASE_NOTES.md](RELEASE_NOTES.md).
-- LeXplume is not currently promoted or supported in mainland China.
+## Where things stand
 
-## Design point of view
+- The web app at [lexplume.com](https://lexplume.com) (1.0.0) is ready to use and can be installed like an app.
+- The Android app is still in progress and not in the store yet. Public registration and payment are not open.
+- Known limitation: for French words, AI enrichment fills in part of speech, a French definition and a short Chinese meaning, but not IPA yet.
+- LeXplume is not currently promoted in, or supported for, mainland China.
+- See [ROADMAP.md](ROADMAP.md) for what’s next and [RELEASE_NOTES.md](RELEASE_NOTES.md) for releases.
 
-The interface style is called **Paper**: warm off-white backgrounds, serif headings, little decoration, and plenty of space, so attention stays on the word and its sentence. The **Semantic Fold** logo is one continuous shape with an open space inside, standing for language being captured, understood, and kept. It still reads in a single colour and at small sizes.
+## More
 
-Read the full [product and design rationale](PRODUCT.md).
+[Product and design logic](PRODUCT.md) · [FAQ](FAQ.md) · [Privacy](https://lexplume.com/privacy) · [Support](SUPPORT.md) · [Security](SECURITY.md) · [Feedback](CONTRIBUTING.md)
 
-## Feedback and repository scope
+## About this repository
 
-Use the product-feedback issue form for suggestions that contain no personal information. Account-specific support belongs at [support@lexplume.com](mailto:support@lexplume.com), and security concerns must follow [SECURITY.md](SECURITY.md).
+This is LeXplume’s public product-information repository: product notes, release notes, support material and approved screenshots. It does not contain the application source code, which stays private. Publishing these files grants no licence to the LeXplume app, name, visual identity or source code; see [NOTICE.md](NOTICE.md).
 
-This is a public product-information repository containing release notes, support guidance, public product direction, and approved brand/media assets. It does not contain application source code; the source remains private. Publication does not grant a licence to the LeXplume application, name, visual identity, or private code.
+Use the issue forms for product suggestions that contain no personal data. Account questions go to [support@lexplume.com](mailto:support@lexplume.com), and security issues must be reported privately as described in [SECURITY.md](SECURITY.md).

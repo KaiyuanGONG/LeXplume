@@ -1,105 +1,86 @@
 <p align="center">
-  <img src="assets/logo-512.png" alt="LeXplume Semantic Fold 标志" width="96">
+  <img src="assets/logo-512.png" alt="LeXplume 的 Semantic Fold 标志" width="88">
 </p>
 
-# LeXplume
+<h1 align="center">LeXplume</h1>
 
-## 把遇到的生词，变成记得住的词。
+<p align="center"><strong>把遇到的生词，变成记得住的词。</strong></p>
 
-从论文、报告、课件，以及日常生活里遇到的法语中随手拾词；AI 按你的专业讲解，并根据已有词库推荐下一批词，最后由 FSRS 安排复习。
+<p align="center">
+  读论文、查资料时遇到生词，连同原句一起收下。<br>
+  LeXplume 按你的专业领域讲清楚它的意思，复习时间交给 FSRS 安排。支持英语和法语。
+</p>
 
-> Turn the words you come across into words you remember.
+<p align="center">
+  <a href="https://lexplume.com"><strong>打开网页版</strong></a> ·
+  <a href="https://lexplume.com/#early-access">申请 Early Access</a> ·
+  <a href="FAQ.md">常见问题</a> ·
+  <a href="README.en.md">English</a> ·
+  <a href="README.fr.md">Français</a>
+</p>
 
-[English](README.en.md) · [Français](README.fr.md)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/readme/zh/hero-dark.webp">
+  <img src="assets/readme/zh/hero-light.webp" alt="电脑上的拾词页：粘贴论文里的一句话并点选 alignment；手机上的复习卡：翻开后显示释义和原句">
+</picture>
 
-[在线预览](https://lexplume.com) · [产品逻辑](PRODUCT.md) · [常见问题](FAQ.md) · [支持](mailto:support@lexplume.com) · [隐私政策](https://lexplume.com/privacy)
+<p align="center"><sub>真实界面截图 · 演示数据</sub></p>
 
-> `lexplume.com` 当前运行 LeXplume 1.0.0，正在准备免费的邀请制 Early Access（仅限年满 18 岁的个人学习者）；公开注册、付费服务和 Google Play 版本尚未开放。
+## 三步，把一个生词变成你的词
 
-![LeXplume 从技术材料中选择 aligned 和 embeddings，并保留各自原句](assets/readme/01-capture-real-material.webp)
+<img src="assets/readme/zh/steps.webp" alt="拾词、理解、复习三个步骤的真实界面：收下 alignment、按生物信息学生成讲解、在复习卡上评分">
 
-_截图来自线上 LeXplume 1.0.0，使用虚构演示数据。_
+1. **拾词：连同原句一起收下。** 粘贴一段文字、截图或拍照，点一下要学的词。原句和来源会一起保存，音标、词性和释义自动补全。
+2. **理解：看懂它在这里的意思。** 词典释义之外，AI 会结合你的专业领域和原句，讲清楚这个词在你的材料里指什么。还没懂可以接着追问。
+3. **复习：在快忘的时候再看一次。** 复习时间由 FSRS 算法安排：记得越牢，间隔越长。除了闪卡，还有拼写、听写和填句三种练习。
 
-## 从你正在读的材料里拾词
+## 同一个词，换个领域就是另一个意思
 
-LeXplume 的起点不是“今天发给你 20 个热门词”，而是你正在读的内容。你可以输入单词，也可以粘贴句子或段落，从中点选多个目标词；图片内容则可通过 OCR 提取。每个词都会保留原句、来源、标签和收录时间，以后复习时还能看到它当初出现在哪里。
+在设置里写下你的专业领域，领域讲解就按它来解释。同一个 `alignment`，在生物信息学里是**序列比对**，在机器学习里是**模型对齐**。讲解生成一次后会保存下来，之后离线也能看。
 
-适合读论文、技术报告和课件时使用，也适合在法语环境里生活时，随手记下遇到的表达。
+<img src="assets/readme/zh/domain.webp" alt="alignment 的两份领域讲解：生物信息学里是序列比对，机器学习里是模型对齐">
 
-## 按你的专业领域讲解
+## 围绕你的词库，继续学下去
 
-同一个词在不同领域里可能是完全不同的概念。在设置里填写你的专业领域（例如“生物信息学”），LeXplume 会在词典释义之外，再按这个领域生成一段讲解。
+- **按词库推荐下一批词。** 参考你的领域、已经收下的词和最近记不牢的词，一次推荐 5 个还没收录的词，可以选基础、进阶、高级三档难度。点「收录」才会进入词库。
+- **英语和法语，分开学。** 在设置里打开法语后，两种语言各有自己的词库和复习队列，推荐也跟着当前语言走。一次复习只练一种语言；关掉法语只会隐藏法语词，不会删除。
 
-以 `alignment` 为例：
+<img src="assets/readme/zh/grow.webp" alt="手机上的三个界面：按词库推荐的新词、英语词库、带 FR 标记的法语词库">
 
-- 日常与通用词典里，它可以是“对齐、一致”。
-- 在生物信息学里，它通常指 DNA、RNA 或蛋白质的**序列比对**。
-- 在机器学习里，`model alignment` 更接近让模型行为与人类意图、规范或目标保持一致。
+## 在哪都能用，数据留在你手里
 
-一句话短释义、词典定义和领域讲解分开显示；领域讲解生成一次后会保存下来，之后查看不用再请求。
-
-![LeXplume 中 alignment 的基础释义、序列比对语境和模型对齐语境](assets/readme/02-domain-explanation.webp)
-
-## 词库越丰富，推荐越贴合你
-
-LeXplume 会综合当前学习语言、你填写的领域、你选的难度，以及词库里最近收录的词、标签和 FSRS 判定的薄弱词，一次给出三类推荐：
-
-- 与已学主题相邻的新概念；
-- 已知词常见的搭配、派生词和词族；
-- 针对薄弱区域的补强词汇。
-
-已经收录的词不会再被推荐。推荐结果只是临时列表，点“收录”后才会进入词库。词库还很少时，先按领域和难度推荐。
-
-## 英语与法语，各有自己的学习节奏
-
-英语和法语共用一套本地数据模型与备份格式，但拥有独立的词库视图、推荐结果和复习队列。切到法语后，界面进入蓝色氛围，法语词显示 `FR` 角标；英语保持暖琥珀色且不加语言角标。
-
-一个复习会话只处理一种语言，避免英法混卡。关闭“学习法语”时，法语内容只是被隐藏，不会被删除。
-
-![LeXplume 英语暖琥珀词库与带 FR 角标的法语蓝色词库并排对比](assets/readme/03-english-french.webp)
-
-_实际界面对照拼接：左侧为英语词库，右侧为法语词库；两侧均使用虚构数据。_
-
-## 用 FSRS 安排复习
-
-LeXplume 用 FSRS 根据你每次的评分安排下一次复习，提供闪卡、拼写、听写和填句四种练习。概览页会汇总待复习数、记忆率、连续学习天数、活动热力图和各状态的词数。
-
-| 能力 | LeXplume 如何处理 |
+| | |
 | --- | --- |
-| 拾词 | 单词、句子、段落、图片/OCR；支持一次选择多个目标词 |
-| 理解 | 发音、词典定义、中文短释义、可缓存的专业领域讲解与单词追问 |
-| 推荐 | 按学习语言、领域、难度、近期词汇和薄弱词推荐未收录新词 |
-| 复习 | FSRS 排程；闪卡、拼写、听写、填句四种模式 |
-| 英语 / 法语 | 独立词库视图、推荐与复习流；法语蓝色氛围和 `FR` 角标 |
-| 数据 | 浏览器本地存储、离线可用、JSON 导入导出 |
-| 云端 | 可选的账号同步和云端 AI（每天有上限）；应用始终以本机数据为准 |
+| **电脑拾词，手机复习** | 网页版在电脑和手机上都能用，也可以安装到手机桌面。Early Access 账号可以在多台设备间同步。 |
+| **离线也能复习** | 安装后，拾词、词库和复习都能离线使用。AI、同步和在线词典需要联网。 |
+| **数据默认存在本机** | 本地优先（local-first）：词库保存在你的设备上，随时可以导出 JSON 备份。 |
+| **自带 API Key** | 你自己的 AI 密钥只存在本机，不会同步，也不会写进导出文件；浏览器直连时只发给你选择的 AI 服务商。 |
+| **AI 不是必需的** | 不用 AI 也可以拾词、管理词库和复习。 |
 
-## 本地优先与 API 密钥
+启用 AI 功能前，请阅读[隐私政策](https://lexplume.com/privacy)。AI 只会收到完成当前操作所需的内容。
 
-- **默认保存在本机。** 词库与复习状态保存在当前浏览器；核心拾词和复习可离线使用。
-- **备份不绑定平台。** 数据可以导出为 JSON，也可以从 JSON 恢复。
-- **浏览器直连 BYOK。** 你选择 AI 提供商与模型，并提供自己的 API Key；密钥留在设备上，不写入 JSON 导出，也不同步到云端。
-- **云同步是可选的。** 同步只是在云端多存一份副本，平时读写的仍是本机数据。
-- **云端 AI 也是可选的。** 只有受邀账号可以使用，每天有额度上限；不用它也能正常使用 LeXplume。
+## Early Access
 
-启用可选 AI 功能前，请阅读最新[隐私政策](https://lexplume.com/privacy)。AI 只会收到完成当前操作所需的内容。
+现在就能用，Early Access 期间免费。不注册也能使用本地功能；Early Access 账号额外提供云同步和云端 AI，云端 AI 每天有使用上限。
 
-## 当前可用范围
+- 账号目前采用邀请制（invite-only），仅限年满 18 岁（18+）的个人学习者。
+- 在 [lexplume.com](https://lexplume.com/#early-access) 留下邮箱即可申请，提交申请不会创建账号。
+- 目前没有付费套餐。之后如何定价还没有确定，所以不承诺永久免费。
 
-- 官方入口是 Web/PWA [lexplume.com](https://lexplume.com)，当前版本 1.0.0。
-- 账号和云端 AI 还在上线前验收，目前只对受邀账号开放。
-- 已知问题：法语词的 AI 补全目前能生成词性、法语释义和中文短释义，但还不能生成音标（IPA）。
-- 公开注册、付费和公开 Google Play 发布尚未开放。后续方向见 [ROADMAP.md](ROADMAP.md) 与 [RELEASE_NOTES.md](RELEASE_NOTES.md)。
+## 现在的状态
+
+- 网页版 [lexplume.com](https://lexplume.com) 1.0.0 可以直接使用，也可以安装成应用。
+- Android 版还在准备中，尚未上架。公开注册和付费尚未开放。
+- 已知问题：法语词的 AI 补全能生成词性、法语释义和中文短释义，但还不能生成音标（IPA）。
 - 目前不在中国大陆推广，也不提供针对中国大陆的支持。
+- 后续方向见 [ROADMAP.md](ROADMAP.md)，版本记录见 [RELEASE_NOTES.md](RELEASE_NOTES.md)。
 
-## 设计视角
+## 更多
 
-LeXplume 的界面风格叫 **Paper**：米白底色、衬线标题、少装饰、多留白，让注意力留在词和原句上。标志叫 **Semantic Fold**：一个连续的形体中间留出一处空白，代表语言被拾取、理解、留存；单色或缩得很小时也能认出来。
+[产品与设计逻辑](PRODUCT.md) · [常见问题](FAQ.md) · [隐私政策](https://lexplume.com/privacy) · [支持](SUPPORT.md) · [安全问题](SECURITY.md) · [反馈方式](CONTRIBUTING.md)
 
-完整说明见[产品与设计逻辑](PRODUCT.md)。
+## 关于这个仓库
 
-## 反馈与仓库范围
+这是 LeXplume 的公开产品信息仓库，包含产品说明、发布说明、支持资料和获批的截图素材。它不包含应用源代码，源代码保持私有（private）。公开这些文件不授予 LeXplume 应用、名称、视觉资产或源代码的使用许可，详见 [NOTICE.md](NOTICE.md)。
 
-不涉及个人信息的产品建议，可以用 Issue 表单提交；账号问题请发往 [support@lexplume.com](mailto:support@lexplume.com)，安全问题必须按 [SECURITY.md](SECURITY.md) 私下报告。
-
-这是公开的产品信息仓库，包含发布说明、支持资料、公开产品方向与获批品牌/媒体素材。它不包含应用源代码，源代码保持私有；公开这些文件不授予 LeXplume 应用、名称、视觉资产或私有代码的使用许可。
+不涉及个人信息的产品建议，可以用 Issue 表单提交；账号问题请发邮件到 [support@lexplume.com](mailto:support@lexplume.com)；安全问题请按 [SECURITY.md](SECURITY.md) 私下报告。

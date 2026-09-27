@@ -1,103 +1,86 @@
 <p align="center">
-  <img src="assets/logo-512.png" alt="Logo Semantic Fold de LeXplume" width="96">
+  <img src="assets/logo-512.png" alt="Logo Semantic Fold de LeXplume" width="88">
 </p>
 
-# LeXplume
+<h1 align="center">LeXplume</h1>
 
-## Des mots rencontrés aux mots retenus.
+<p align="center"><strong>Des mots rencontrés aux mots retenus.</strong></p>
 
-Capturez les mots de vos articles, rapports et diapositives, ou du français de tous les jours. Obtenez une explication adaptée à votre domaine, des suggestions tirées de votre propre bibliothèque et des révisions programmées par FSRS.
+<p align="center">
+  Un mot inconnu dans un article ou un rapport ? Gardez-le avec sa phrase.<br>
+  LeXplume l’explique pour votre domaine et laisse FSRS planifier les révisions. Pour l’anglais et le français.
+</p>
 
-[简体中文](README.md) · [English](README.en.md)
+<p align="center">
+  <a href="https://lexplume.com"><strong>Ouvrir l’application web</strong></a> ·
+  <a href="https://lexplume.com/#early-access">Demander l’Early Access</a> ·
+  <a href="FAQ.md">FAQ</a> ·
+  <a href="README.md">简体中文</a> ·
+  <a href="README.en.md">English</a>
+</p>
 
-[Aperçu en ligne](https://lexplume.com) · [Logique produit](PRODUCT.md) · [FAQ](FAQ.md) · [Assistance](mailto:support@lexplume.com) · [Confidentialité](https://lexplume.com/privacy)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/readme/en/hero-dark.webp">
+  <img src="assets/readme/en/hero-light.webp" alt="Capture sur ordinateur : une phrase d’article avec alignment sélectionné. Révision sur téléphone : la carte retournée affiche le sens et la phrase d’origine.">
+</picture>
 
-> `lexplume.com` présente actuellement LeXplume 1.0.0. Une version gratuite sur invitation, réservée aux adultes de 18 ans et plus qui apprennent à titre personnel, est en préparation ; l'inscription publique, le paiement et une version publique sur Google Play ne sont pas encore disponibles.
+<p align="center"><sub>Captures de l’interface réelle (en anglais) · données de démonstration</sub></p>
 
-![LeXplume sélectionnant aligned et embeddings dans un texte technique tout en conservant leurs phrases d'origine](assets/readme/01-capture-real-material.webp)
+## Trois étapes, du mot inconnu au mot connu
 
-_Capture de l'interface en ligne LeXplume 1.0.0 avec des données fictives._
+<img src="assets/readme/en/steps.webp" alt="Les écrans réels Capture, Compréhension et Révision : enregistrer alignment, une explication en bio-informatique et une carte de révision">
 
-## Capturer depuis vos contenus, pas depuis une liste générique
+1. **Capturer : avec sa phrase.** Collez un texte, ajoutez une capture d’écran ou une photo, puis touchez le mot à apprendre. La phrase et la source sont enregistrées avec lui ; l’API, la catégorie grammaticale et une définition se remplissent automatiquement.
+2. **Comprendre : ce qu’il veut dire ici.** Au-delà de la définition du dictionnaire, l’IA tient compte de votre domaine et de la phrase d’origine pour expliquer le sens du mot dans votre texte. Vous pouvez ensuite poser une question de suivi.
+3. **Réviser : juste avant d’oublier.** FSRS planifie chaque révision : mieux vous retenez un mot, plus l’intervalle s’allonge. En plus des cartes, il y a l’orthographe, la dictée et les phrases à compléter.
 
-LeXplume commence par ce que vous lisez déjà. Saisissez un mot, collez une phrase ou un paragraphe et sélectionnez plusieurs cibles, ou extrayez le texte d'une image par OCR. Chaque mot peut conserver sa phrase, sa source, ses étiquettes et sa date de capture : le vocabulaire reste ainsi lié au contexte qui l'a rendu utile.
+## Un même mot, un autre domaine, un autre sens
 
-Ce flux convient aux articles scientifiques, rapports techniques, supports de cours et expressions françaises rencontrées dans la vie quotidienne.
+Indiquez votre domaine dans les réglages et les explications s’y adaptent. Le même `alignment` désigne l’**alignement de séquences** en bio-informatique et l’**alignement des modèles** en apprentissage automatique. Une explication générée est conservée et reste consultable hors connexion.
 
-## Des explications adaptées à votre domaine
+<img src="assets/readme/en/domain.webp" alt="Deux explications d’alignment : alignement de séquences en bio-informatique, alignement des modèles en apprentissage automatique">
 
-Un même mot peut désigner des concepts très différents selon le domaine. Indiquez votre domaine dans les Réglages (par exemple « bio-informatique ») : LeXplume ajoute alors une explication adaptée à ce domaine, à côté de la définition du dictionnaire.
+## Continuer à partir de votre vocabulaire
 
-Prenons `alignment` :
+- **Les prochains mots, choisis d’après votre vocabulaire.** Selon votre domaine, les mots déjà enregistrés et ceux que vous oubliez, LeXplume propose 5 mots que vous n’avez pas encore, au niveau de base, intermédiaire ou avancé. Rien n’est ajouté avant que vous touchiez « Ajouter ».
+- **L’anglais et le français, séparément.** Activez le français dans les réglages : chaque langue a son vocabulaire et sa file de révision, et les suggestions suivent la langue étudiée. Une séance de révision porte sur une seule langue ; désactiver le français masque les mots français sans les supprimer.
 
-- Dans l'usage général, le mot peut désigner un alignement ou un accord.
-- En bio-informatique, il correspond généralement à l'**alignement de séquences** d'ADN, d'ARN ou de protéines.
-- En apprentissage automatique, `model alignment` concerne l'adéquation du comportement d'un modèle avec les intentions, normes ou objectifs humains.
+<img src="assets/readme/en/grow.webp" alt="Trois écrans de téléphone : mots suggérés, vocabulaire anglais et vocabulaire français avec les repères FR">
 
-Le sens court, la définition de base et l'explication détaillée par domaine restent distincts. L'explication spécialisée est mise en cache après sa génération.
+## Partout avec vous, vos données restent à vous
 
-![LeXplume comparant la définition générale d'alignment avec ses sens en bio-informatique et en apprentissage automatique](assets/readme/02-domain-explanation.webp)
-
-## Des suggestions qui suivent votre bibliothèque
-
-LeXplume combine la langue étudiée, votre domaine, un niveau choisi manuellement, les captures récentes, les étiquettes thématiques et les mots fragiles selon FSRS afin de proposer :
-
-- des concepts voisins qui prolongent les thèmes déjà étudiés ;
-- des collocations, dérivés et familles de mots utiles ;
-- un renforcement ciblé des zones où le rappel reste faible.
-
-Les mots déjà présents dans la bibliothèque de la langue active sont exclus. Les propositions restent temporaires jusqu'à ce que vous décidiez de les ajouter par le flux de capture normal. Avec une bibliothèque vide, le système revient au domaine et au niveau de difficulté.
-
-## Anglais et français, chacun avec son propre rythme
-
-L'anglais et le français partagent un même modèle de données local et un même format de sauvegarde, tout en conservant des vues de bibliothèque, des recommandations et des files de révision séparées. Le français adopte une ambiance bleue avec des repères `FR` ; l'anglais garde l'ambiance ambre et n'affiche pas de repère.
-
-Une session de révision ne couvre qu'une langue, afin d'éviter de mélanger les cartes. Désactiver l'étude du français masque les entrées françaises sans les supprimer.
-
-![Comparaison de la bibliothèque anglaise ambre et de la bibliothèque française bleue de LeXplume avec repères FR](assets/readme/03-english-french.webp)
-
-_Montage côte à côte de deux états réels de l'interface, avec des données fictives._
-
-## Réviser avec FSRS
-
-LeXplume utilise FSRS pour programmer la prochaine révision de chaque mot selon votre évaluation, avec quatre modes : cartes, orthographe, dictée et phrases à compléter. Le tableau de bord affiche les mots à réviser, la rétention, les séries, l'activité et la répartition des mots par état.
-
-| Capacité | Traitement dans LeXplume |
+| Ce qui compte | Ce que fait LeXplume |
 | --- | --- |
-| Capture | Mots, phrases, paragraphes et image/OCR ; plusieurs cibles en une fois |
-| Compréhension | Prononciation, définition, sens chinois concis, explication spécialisée mise en cache et questions par mot |
-| Recommandation | Nouveaux mots choisis selon langue, domaine, difficulté, vocabulaire récent et zones fragiles |
-| Révision | Planification FSRS avec cartes, orthographe, dictée et phrases à compléter |
-| Anglais / français | Bibliothèques, recommandations et révisions séparées ; ambiance bleue et repères `FR` en français |
-| Données | Stockage local dans le navigateur, cœur utilisable hors connexion et import/export JSON |
-| Cloud | Synchronisation facultative et IA cloud avec limite quotidienne ; l'application travaille toujours sur la copie de l'appareil |
+| **Capturer sur ordinateur, réviser sur téléphone** | L’application web fonctionne sur ordinateur et sur téléphone et peut être installée sur l’écran d’accueil. Les comptes Early Access se synchronisent entre appareils. |
+| **Réviser hors connexion** | Une fois installée, la capture, le vocabulaire et la révision fonctionnent hors connexion. L’IA, la synchronisation et le dictionnaire en ligne ont besoin du réseau. |
+| **Stocké sur votre appareil par défaut** | LeXplume est local-first : votre vocabulaire reste sur votre appareil et vous pouvez exporter une sauvegarde JSON à tout moment. |
+| **Votre propre clé API** | Votre clé IA reste sur cet appareil ; elle n’est ni synchronisée ni exportée. En connexion directe, elle n’est envoyée qu’au fournisseur IA que vous choisissez. |
+| **L’IA est facultative** | La capture, le vocabulaire et la révision fonctionnent sans IA. |
 
-## Données locales et clés API
+Consultez la [politique de confidentialité](https://lexplume.com/privacy) avant d’activer l’IA. Seul le contenu nécessaire à l’opération demandée lui est transmis.
 
-- **Local par défaut.** Le vocabulaire actif et les révisions vivent dans le navigateur ; la capture et la révision essentielles fonctionnent hors connexion.
-- **Sauvegarde portable.** Les données peuvent être exportées et restaurées en JSON.
-- **BYOK en connexion directe.** Vous choisissez un fournisseur et un modèle IA et fournissez votre propre clé. Elle reste sur l'appareil et n'entre ni dans l'export JSON ni dans la synchronisation.
-- **Synchronisation facultative.** Elle garde une copie dans le cloud pour vos autres appareils ; l'application continue de travailler sur la copie locale.
-- **IA cloud facultative.** Réservée aux comptes invités, avec une limite quotidienne ; LeXplume fonctionne sans elle.
+## Early Access
 
-Consultez la [politique de confidentialité](https://lexplume.com/privacy) avant d'activer l'IA. Seul le contenu nécessaire à l'opération demandée est transmis au fournisseur.
+Utilisable dès maintenant, et gratuit pendant l’Early Access. Les fonctions locales marchent sans compte ; les comptes Early Access ajoutent la synchronisation et l’IA cloud, avec une limite d’utilisation quotidienne.
 
-## Disponibilité actuelle
+- Les comptes sont pour l’instant sur invitation (invite-only) et réservés aux adultes (18+) qui apprennent à titre personnel.
+- Pour demander un accès, laissez votre e-mail sur [lexplume.com](https://lexplume.com/#early-access). Une demande ne crée pas de compte.
+- Il n’y a pas encore d’offre payante. Les tarifs après l’Early Access ne sont pas décidés ; la gratuité n’est donc pas garantie pour toujours.
 
-- L'application officielle est le Web/PWA sur [lexplume.com](https://lexplume.com), actuellement en version 1.0.0.
-- Les comptes et l'IA cloud sont encore en test avant lancement et restent réservés aux comptes invités.
-- Limite connue : pour les mots français, l'enrichissement IA remplit la catégorie grammaticale, la définition française et un sens chinois court, mais pas encore la transcription phonétique (API).
-- L'inscription publique, le paiement et la distribution publique sur Google Play ne sont pas disponibles. Voir [ROADMAP.md](ROADMAP.md) et [RELEASE_NOTES.md](RELEASE_NOTES.md).
-- LeXplume n'est actuellement ni promu ni pris en charge en Chine continentale.
+## Où en est le projet
 
-## Point de vue design
+- L’application web sur [lexplume.com](https://lexplume.com) (1.0.0) est utilisable dès maintenant et peut être installée comme une application.
+- L’application Android est en préparation et n’est pas encore sur le store. L’inscription publique et le paiement ne sont pas ouverts.
+- Limite connue : pour les mots français, l’enrichissement IA remplit la catégorie grammaticale, la définition française et un sens chinois court, mais pas encore la transcription phonétique (API).
+- LeXplume n’est actuellement ni promu ni pris en charge en Chine continentale.
+- Voir [ROADMAP.md](ROADMAP.md) pour la suite et [RELEASE_NOTES.md](RELEASE_NOTES.md) pour les versions.
 
-Le style de l'interface s'appelle **Paper** : fond blanc cassé, titres en serif, peu de décoration et beaucoup d'espace, pour garder l'attention sur le mot et sa phrase. Le logo **Semantic Fold** est une forme continue autour d'un espace vide ; il évoque la langue capturée, comprise et retenue, et reste lisible en une couleur et à petite taille.
+## En savoir plus
 
-Voir la [logique produit et design complète](PRODUCT.md).
+[Logique produit et design](PRODUCT.md) · [FAQ](FAQ.md) · [Confidentialité](https://lexplume.com/privacy) · [Assistance](SUPPORT.md) · [Sécurité](SECURITY.md) · [Retours](CONTRIBUTING.md)
 
-## Retours et portée du dépôt
+## À propos de ce dépôt
 
-Utilisez le formulaire d'issue pour les suggestions sans données personnelles. Les demandes liées à un compte vont à [support@lexplume.com](mailto:support@lexplume.com), et les vulnérabilités suivent [SECURITY.md](SECURITY.md).
+Ce dépôt public d’information produit contient les notes produit, les notes de version, l’assistance et des captures approuvées. Il ne contient pas le code source de l’application, qui reste privé. Sa publication n’accorde aucune licence sur l’application, le nom, l’identité visuelle ou le code source de LeXplume ; voir [NOTICE.md](NOTICE.md).
 
-Ce dépôt public d'information produit contient les notes de version, l'assistance, la direction publique et les médias de marque approuvés. Il ne contient pas le code source de l'application, qui reste privé. Sa publication n'accorde aucune licence sur l'application, le nom, l'identité visuelle ou le code privé LeXplume.
+Utilisez les formulaires d’issue pour les suggestions sans données personnelles. Les questions de compte vont à [support@lexplume.com](mailto:support@lexplume.com), et les problèmes de sécurité se signalent en privé selon [SECURITY.md](SECURITY.md).
